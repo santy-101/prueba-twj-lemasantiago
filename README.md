@@ -1,2 +1,4 @@
-# prueba-twj-lemasantiago
-prueba-twj-lemasantiago
+# Prueba 1 - Segundo Bimestre
+# Tecnologías Web con JavaScript
+
+Santiago Lema
