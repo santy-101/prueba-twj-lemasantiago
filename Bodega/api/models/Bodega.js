@@ -19,7 +19,7 @@ module.exports = {
         type: 'string',
         required: true
       },
-    capacidadEnToneladas:
+    capacidad:
       {
         type: 'integer',
         required: true

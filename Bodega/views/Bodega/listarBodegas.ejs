@@ -1,0 +1,57 @@
+<h1>Lista de Bodegas</h1>
+
+<div class="row">
+  <div class="col-sm-9">
+    <p>Aquí se listan todas las bodegas del sistema</p>
+  </div>
+  <div class="col-sm-3">
+    <a href="/CrearBodega" class="btn btn-block btn-success">
+      Crear Bodega
+    </a>
+  </div>
+</div>
+<br>
+
+
+<% for(var i=0; i<bodegas.length; i++) {%>
+<div class="row">
+  <div class="col-sm-2"></div>
+
+<div class="row ma-margen-top-bottom">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-4">
+    <div class="text-center ma-borde ma-padding-top-bottom">
+      <h1> <%= bodegas[i].nombre %></h1>
+    </div>
+  </div>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-5 text-center">
+    <div class="text-center ma-borde" style="margin-top: 40px;">
+      <p>
+        <%= bodegas[i].nombre %>
+      </p>
+      <p>
+        <%= bodegas[i].direccion %>
+      </p>
+      <p>
+        <%= bodegas[i].capacidad %>
+      </p>
+    </div>
+  </div>
+  <div class="col-sm-1">
+    <br>
+    <a href="/Bodega/borrarBodega?id=<%= bodegas[i].id %>" class="btn btn-danger btn-block">X</a>
+    <a href="/EditarBodega?id=<%= bodegas[i].id %>" class="btn btn-info btn-block">Edit</a>
+  </div>
+</div>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+<br>
+<% }%>
+
+
+
+
+
+

@@ -32,9 +32,14 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  'get /': 'RutasController.home',
+  'get /Inicio': 'RutasController.home',
+  'get /CrearBodega': 'RutasController.crearBodega',
+  'get /Error': 'RutasController.error',
+  'get /ListarBodegas': 'RutasController.listarBodegas'
+
+
+
 
   /***************************************************************************
   *                                                                          *
