@@ -32,7 +32,7 @@ module.exports = {
             error: {
               descripcion: "Hubo un problema cargando las bodegas",
               rawError: errorIndefinido,
-              url: "/ListarBodegas"
+              url: "/listarBodegas"
             }
           });
         }
