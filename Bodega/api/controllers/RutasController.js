@@ -1,3 +1,10 @@
+/**
+ * RutasController
+ *
+ * @description :: Server-side logic for managing Rutas
+ * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ */
+
 module.exports = {
 
   home: function (req, res) {
@@ -8,9 +15,9 @@ module.exports = {
     return res.view('Bodega/crearBodega');
   },
   error: function (req, res) {
-    return res.view('vistas/error', {
+    return res.view('vistas/Error', {
       error: {
-        desripcion: "Usted está por error en esta Ruta. Diríjase a Inicio",
+        descripcion: "Usted está por error en esta Ruta. Diríjase a Inicio",
         rawError: "Ruta equivocada",
         url: "/Inicio"
       }
@@ -23,14 +30,14 @@ module.exports = {
         if (errorIndefinido) {
           res.view('vistas/Error', {
             error: {
-              desripcion: "Hubo un problema cargando las bodegas",
+              descripcion: "Hubo un problema cargando las bodegas",
               rawError: errorIndefinido,
               url: "/ListarBodegas"
             }
           });
         }
 
-        return res.view('Bodega/listarBodegas', {
+        res.view('Bodega/listarBodegas', {
           bodegas: bodegasEncontradas
         });
       })

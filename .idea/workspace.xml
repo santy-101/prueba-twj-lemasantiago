@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095019e8-6230-47a2-b834-54365cebf1c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bodega/api/controllers/RutasController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bodega/views/Bodega/crearBodega.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bodega/views/Bodega/editarBodega.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bodega/views/vistas/Error.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bodega/views/vistas/home.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bodega/api/controllers/BodegaController.js" afterPath="$PROJECT_DIR$/Bodega/api/controllers/BodegaController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bodega/api/models/Bodega.js" afterPath="$PROJECT_DIR$/Bodega/api/models/Bodega.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bodega/config/routes.js" afterPath="$PROJECT_DIR$/Bodega/config/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bodega/views/layout.ejs" afterPath="$PROJECT_DIR$/Bodega/views/layout.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bodega/api/controllers/RutasController.js" afterPath="$PROJECT_DIR$/Bodega/api/controllers/RutasController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs" afterPath="$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +36,7 @@
       <file leaf-file-name="crearBodega.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bodega/views/Bodega/crearBodega.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="629">
               <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
               <folding />
             </state>
@@ -60,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BodegaController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BodegaController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bodega/api/controllers/BodegaController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1332">
-              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="296">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -73,7 +66,7 @@
       <file leaf-file-name="Bodega.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bodega/api/models/Bodega.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="-111">
               <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
             </state>
@@ -83,8 +76,8 @@
       <file leaf-file-name="listarBodegas.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="2109">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +86,7 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bodega/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="9">
               <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding />
             </state>
@@ -120,14 +113,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RutasController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RutasController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bodega/api/controllers/RutasController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="1369">
+              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
-                <element signature="e#48#89#0" expanded="false" />
-                <element signature="e#205#415#0" expanded="false" />
+                <element signature="e#215#256#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -148,12 +140,12 @@
         <option value="$PROJECT_DIR$/Bodega/views/layout.ejs" />
         <option value="$PROJECT_DIR$/Bodega/views/Bodega/editarBodega.ejs" />
         <option value="$PROJECT_DIR$/Bodega/views/vistas/home.ejs" />
-        <option value="$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs" />
         <option value="$PROJECT_DIR$/Bodega/views/Bodega/d.ejs" />
         <option value="$PROJECT_DIR$/Bodega/config/routes.js" />
         <option value="$PROJECT_DIR$/Bodega/views/Bodega/crearBodega.ejs" />
-        <option value="$PROJECT_DIR$/Bodega/api/controllers/RutasController.js" />
         <option value="$PROJECT_DIR$/Bodega/api/models/Bodega.js" />
+        <option value="$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs" />
+        <option value="$PROJECT_DIR$/Bodega/api/controllers/RutasController.js" />
         <option value="$PROJECT_DIR$/Bodega/api/controllers/BodegaController.js" />
       </list>
     </option>
@@ -443,25 +435,25 @@
       <workItem from="1488055189178" duration="78000" />
       <workItem from="1488055289970" duration="113000" />
       <workItem from="1488055519600" duration="274000" />
-      <workItem from="1488056033538" duration="9415000" />
+      <workItem from="1488056033538" duration="10337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9880000" />
+    <option name="totallyTimeSpent" value="10802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26207906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30746704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3107511" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15905744" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -480,8 +472,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3074627" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48751837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3107511" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.055636898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -596,22 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bodega/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bodega/views/vistas/Error.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -630,7 +606,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bodega/views/Bodega/crearBodega.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="629">
           <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
           <folding />
         </state>
@@ -638,28 +614,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bodega/api/models/Bodega.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="-111">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bodega/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bodega/api/controllers/BodegaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bodega/views/Bodega/listarBodegas.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2109">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bodega/api/controllers/RutasController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="1369">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding>
-            <element signature="e#48#89#0" expanded="false" />
-            <element signature="e#205#415#0" expanded="false" />
+            <element signature="e#215#256#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bodega/api/controllers/BodegaController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1332">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>

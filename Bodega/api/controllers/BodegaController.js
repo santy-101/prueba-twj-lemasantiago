@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  crearEntrenador: function (req, res) {
+  crearBodega: function (req, res) {
 
     if (req.method == "POST") {
 
