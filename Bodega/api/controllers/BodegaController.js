@@ -45,7 +45,7 @@ module.exports = {
                 });
               }
 
-              return res.view('Bodega/ListarBodegas', {
+              return res.view('Bodega/listarBodegas', {
                 bodegas: bodegasEncontradas
               });
             })
