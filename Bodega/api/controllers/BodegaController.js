@@ -94,7 +94,7 @@ module.exports = {
 
       Bodega.update({
         id: parametros.idBodega
-      }, bodegaAEditar).exec(function (errorInesperado, bodegaRemovida) {
+      }, bodegaAEditar).exec(function (errorInesperado) {
         if (errorInesperado) {
           return res.view('vistas/Error', {
             error: {
@@ -133,5 +133,50 @@ module.exports = {
       });
     }
 
-  }
+  },
+  borrarBodega: function (req, res) {
+    var parametros = req.allParams();
+
+    if (parametros.id) {
+
+      Bodega.destroy({
+        id: parametros.id
+      }).exec(function (errorInesperado, BodegaEliminada) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "Tuvimos un Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarBodegas"
+            }
+          });
+        }
+        Bodega.find()
+          .exec(function (errorIndefinido, bodegasEncontradas) {
+
+            if (errorIndefinido) {
+              res.view('vistas/Error', {
+                error: {
+                  descripcion: "Hubo un problema cargando las bodegas",
+                  rawError: errorIndefinido,
+                  url: "/ListarBodegas"
+                }
+              });
+            }
+            res.view('Bodega/listarBodegas', {
+              bodegas: bodegasEncontradas
+            });
+          })
+      })
+
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          desripcion: "Necesitamos el ID para borrar la bodegar",
+          rawError: "No envía ID",
+          url: "/ListarBodegas"
+        }
+      });
+    }
+}
 };
