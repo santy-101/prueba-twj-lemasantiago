@@ -79,5 +79,59 @@ module.exports = {
 
     }
 
+  },
+  editarBodega: function (req, res) {
+    var parametros = req.allParams();
+
+    if (parametros.idBodega && (parametros.nombre || parametros.direccion || parametros.capacidad)) {
+
+
+      var bodegaAEditar = {
+        nombre: parametros.nombre,
+        direccion: parametros.direccion,
+        capacidad: parametros.capacidad
+      };
+
+      Bodega.update({
+        id: parametros.idBodega
+      }, bodegaAEditar).exec(function (errorInesperado, bodegaRemovida) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "Tuvimos un Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarBodegas"
+            }
+          });
+        }
+        Bodega.find()
+          .exec(function (errorIndefinido, bodegasEncontradas) {
+
+            if (errorIndefinido) {
+              res.view('vistas/Error', {
+                error: {
+                  descripcion: "Hubo un problema cargando las bodegas",
+                  rawError: errorIndefinido,
+                  url: "/EditarBodega"
+                }
+              });
+            }
+
+            res.view('Bodega/listarBodegas', {
+              bodegas: bodegasEncontradas
+            });
+          })
+      })
+
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          descripcion: "Necesitamos que envíe los parámetros ",
+          rawError: "No envía parámetros",
+          url: "/ListarBodegas"
+        }
+      });
+    }
+
   }
 };

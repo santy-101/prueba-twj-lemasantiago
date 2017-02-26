@@ -41,5 +41,46 @@ module.exports = {
           bodegas: bodegasEncontradas
         });
       })
+  },
+  editarBodega: function (req, res) {
+    var parametros = req.allParams();
+    if (parametros.id) {
+      Bodega.findOne({
+        id: parametros.id
+      }).exec(function (errorInesperado, bodegaEncontrada) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              desripcion: "Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarBodegas"
+            }
+          });
+        }
+        if(bodegaEncontrada){
+          return res.view("Bodega/editarBodega",{
+            bodegaAEditar:bodegaEncontrada
+          });
+        }else{
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "La bodega con id: "+parametros.id+" no existe.",
+              rawError: "No existe la bodega",
+              url: "/ListarBodegas"
+            }
+          });
+        }
+      })
+    } else {
+
+      return res.view('vistas/Error', {
+        error: {
+          descripcion: "No ha envíado al parámetro ID",
+          rawError: "Faltan Parámetros",
+          url: "/ListarBodegas"
+        }
+      });
+
+    }
   }
 };
