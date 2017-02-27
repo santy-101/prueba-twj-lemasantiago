@@ -37,7 +37,17 @@
             Peso: <%= items[i].peso %> gramo(s)
           </p>
           <p>
+            <%if((items[i].idBodega)==undefined)
+            {
+              var texto = "Esta bodega ha sido eliminada. Considere eliminar este producto";
+            %>
+            Bodega: <%=texto%>
+            <%
+            }
+            else
+            {%>
             Bodega: <%= items[i].idBodega.nombre%>
+            <% }%>
           </p>
         </div>
       </div>
