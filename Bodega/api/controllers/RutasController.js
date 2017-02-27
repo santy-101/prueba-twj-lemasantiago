@@ -94,7 +94,7 @@ module.exports = {
 
   },
   listarItems: function (req, res) {
-    Item.find()
+    Item.find().populate("idBodega")
       .exec(function (errorIndefinido, itemsEncontrados) {
 
         if (errorIndefinido) {

@@ -33,7 +33,7 @@ module.exports = {
             });
           }
 
-          Item.find()
+          Item.find().populate("idBodega")
             .exec(function (errorIndefinido, itemsEncontrados) {
 
               if (errorIndefinido) {
