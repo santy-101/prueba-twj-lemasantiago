@@ -30,5 +30,6 @@ module.exports = {
         via: 'idBodega'
       }
   }
+
 };
 

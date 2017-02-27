@@ -57,14 +57,14 @@ module.exports = {
             }
           });
         }
-        if(bodegaEncontrada){
-          return res.view("Bodega/editarBodega",{
-            bodegaAEditar:bodegaEncontrada
+        if (bodegaEncontrada) {
+          return res.view("Bodega/editarBodega", {
+            bodegaAEditar: bodegaEncontrada
           });
-        }else{
+        } else {
           return res.view('vistas/Error', {
             error: {
-              descripcion: "La bodega con id: "+parametros.id+" no existe.",
+              descripcion: "La bodega con id: " + parametros.id + " no existe.",
               rawError: "No existe la bodega",
               url: "/ListarBodegas"
             }
@@ -129,14 +129,14 @@ module.exports = {
             }
           });
         }
-        if(itemEncontrado){
-          return res.view("Item/editarItem",{
-            itemAEditar:itemEncontrado
+        if (itemEncontrado) {
+          return res.view("Item/editarItem", {
+            itemAEditar: itemEncontrado
           });
-        }else{
+        } else {
           return res.view('vistas/Error', {
             error: {
-              descripcion: "El item con id: "+parametros.id+" no existe.",
+              descripcion: "El item con id: " + parametros.id + " no existe.",
               rawError: "No existe el item",
               url: "/ListarItems"
             }

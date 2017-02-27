@@ -137,7 +137,10 @@ module.exports = {
     var parametros = req.allParams();
 
     if (parametros.id) {
-
+      if(Bodega.items)
+      {
+        console.log("Tiene items")
+      }
       Bodega.destroy({
         id: parametros.id
       }).exec(function (errorInesperado, BodegaEliminada) {
@@ -171,7 +174,7 @@ module.exports = {
     } else {
       return res.view('vistas/Error', {
         error: {
-          desripcion: "Necesitamos el ID para borrar la bodega",
+          descripcion: "Necesitamos el ID para borrar la bodega",
           rawError: "No envía ID",
           url: "/ListarBodegas"
         }
