@@ -35,10 +35,12 @@ module.exports.routes = {
   'get /': 'RutasController.home',
   'get /Inicio': 'RutasController.home',
   'get /CrearBodega': 'RutasController.crearBodega',
-  'get /Error': 'RutasController.error',
   'get /ListarBodegas': 'RutasController.listarBodegas',
-  'get /EditarBodega': 'RutasController.editarBodega'
-
+  'get /EditarBodega': 'RutasController.editarBodega',
+  'get /CrearItem': 'RutasController.crearItem',
+  'get /ListarItems': 'RutasController.listarItems',
+  'get /EditarItem': 'RutasController.editarItem',
+  'get /Error': 'RutasController.error'
 
 
 

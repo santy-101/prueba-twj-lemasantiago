@@ -82,5 +82,77 @@ module.exports = {
       });
 
     }
+  },
+  crearItem: function (req, res) {
+    Bodega.find().exec(function (error, bodegasEncontradas) {
+      if (error) return res.serverError();
+      return res.view('Item/crearItem', {
+        title: 'Crear Items',
+        bodegas: bodegasEncontradas
+      });
+    });
+
+  },
+  listarItems: function (req, res) {
+    Item.find()
+      .exec(function (errorIndefinido, itemsEncontrados) {
+
+        if (errorIndefinido) {
+          res.view('vistas/Error', {
+            error: {
+              descripcion: "Hubo un problema cargando los items",
+              rawError: errorIndefinido,
+              url: "/listarItems"
+            }
+          });
+        }
+
+        res.view('Item/listarItems', {
+          items: itemsEncontrados
+        });
+      })
+
+  },
+  editarItem: function (req, res) {
+    var parametros = req.allParams();
+    if (parametros.id) {
+      Item.findOne({
+        id: parametros.id
+      }).exec(function (errorInesperado, itemEncontrado) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarItems"
+            }
+          });
+        }
+        if(itemEncontrado){
+          return res.view("Item/editarItem",{
+            itemAEditar:itemEncontrado
+          });
+        }else{
+          return res.view('vistas/Error', {
+            error: {
+              descripcion: "El item con id: "+parametros.id+" no existe.",
+              rawError: "No existe el item",
+              url: "/ListarItems"
+            }
+          });
+        }
+      })
+    } else {
+
+      return res.view('vistas/Error', {
+        error: {
+          descripcion: "No ha envíado al parámetro ID",
+          rawError: "Faltan Parámetros",
+          url: "/ListarItems"
+        }
+      });
+
+    }
   }
+
 };

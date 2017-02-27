@@ -85,7 +85,6 @@ module.exports = {
 
     if (parametros.idBodega && (parametros.nombre || parametros.direccion || parametros.capacidad)) {
 
-
       var bodegaAEditar = {
         nombre: parametros.nombre,
         direccion: parametros.direccion,
@@ -172,7 +171,7 @@ module.exports = {
     } else {
       return res.view('vistas/Error', {
         error: {
-          desripcion: "Necesitamos el ID para borrar la bodegar",
+          desripcion: "Necesitamos el ID para borrar la bodega",
           rawError: "No envía ID",
           url: "/ListarBodegas"
         }

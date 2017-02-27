@@ -1,0 +1,39 @@
+<div class ="container">
+  <h2>Crear un Item</h2>
+
+  <form action="/Item/CrearItem" method="post">
+
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" class="form-control" placeholder="Ingrese el nombre del item" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Cantidad</label>
+      <input type="number" min="1" class="form-control" placeholder="Ingrese la cantidad del item" name="cantidad">
+    </div>
+
+    <div class="form-group">
+      <label>Peso (en gramos)</label>
+      <input type="number" min="1" class="form-control" placeholder="Ingrese el peso del item" name="peso">
+    </div>
+
+    <div class="form-group">
+      <label>Bodega</label>
+
+      <select class="form-control" name="idBodega">
+        <% for(var i=0; i<bodegas.length; i++){ %>
+        <option value='<%=bodegas[i].id%>'>
+          <%=bodegas[i].nombre%>
+        </option>
+        <%  } %>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Crear Item</button>
+
+  </form>
+</div>
+
+
+
