@@ -109,6 +109,7 @@ module.exports = {
 
         res.view('Item/listarItems', {
           items: itemsEncontrados
+
         });
       })
 
