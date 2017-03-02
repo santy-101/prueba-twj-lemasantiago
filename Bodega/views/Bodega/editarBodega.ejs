@@ -7,18 +7,18 @@
       <div class="form-group">
         <label>Nombre</label>
         <input type="text" class="form-control" placeholder="Ingrese el nuevo nombre de la bodega" name="nombre"
-               value="<%= bodegaAEditar.nombre %>">
+               value="<%= bodegaAEditar.nombre %>" required>
       </div>
 
       <div class="form-group">
         <label>Dirección</label>
         <input type="text" class="form-control" placeholder="Ingrese la nueva dirección de la bodega" name="direccion"
-               value="<%= bodegaAEditar.direccion %>">
+               value="<%= bodegaAEditar.direccion %>" required>
       </div>
 
       <div class="form-group">
         <label>Capacidad de la bodega (en toneladas)</label>
-        <input type="number" min="1" class="form-control" placeholder="Ingrese la nueva capacidad de la bodega" name="capacidad" value="<%= bodegaAEditar.capacidad %>">
+        <input type="number" min="1" class="form-control" placeholder="Ingrese la nueva capacidad de la bodega" name="capacidad" value="<%= bodegaAEditar.capacidad %>" required>
       </div>
       <input type="hidden" name="idBodega" value="<%= bodegaAEditar.id %>">
       <button type="submit" class="btn btn-primary">Editar Bodega</button>
